@@ -2,6 +2,7 @@
 import flet
 from flet import *
 from header import AppHeader
+from form import AppForm
 
 def main(page:Page):
     page.bgcolor = "#F7ECE1"
@@ -10,7 +11,9 @@ def main(page:Page):
         Column(
             expand=True,
             controls=[
-                AppHeader()
+                AppHeader(),
+                Divider(height=2, color="transparent"),
+                AppForm(),
             ],
         )
     )
