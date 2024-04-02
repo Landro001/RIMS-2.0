@@ -1,7 +1,7 @@
 # Modulos
 import flet
 from flet import *
-import sqlite3
+from header import AppHeader
 
 def main(page:Page):
     page.bgcolor = "#F7ECE1"
@@ -10,7 +10,7 @@ def main(page:Page):
         Column(
             expand=True,
             controls=[
-
+                AppHeader()
             ],
         )
     )

@@ -15,10 +15,10 @@ def add_to_control_reference(key, value):
     finally:
         pass
 
-    def return_control_reference():
-        '''
-        Função que retornar o dicionário
-        '''
-        global control_reference
-        return control_reference
+def return_control_reference():
+    '''
+    Função que retornar o dicionário
+    '''
+    global control_reference
+    return control_reference
     
