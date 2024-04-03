@@ -1,2 +1,5 @@
-# Pasta do ambiente virtual
+# Diretório do ambiente virtual
 venv
+
+# Diretório de cache do python
+__pycache__

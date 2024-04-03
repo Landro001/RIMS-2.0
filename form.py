@@ -3,7 +3,7 @@
 # Modulos
 from flet import *
 from controls import add_to_control_reference
-# from btn import return_form_button
+from btn import return_form_button
 
 class AppForm(UserControl):
     def __init__(self):
@@ -65,10 +65,11 @@ class AppForm(UserControl):
                             self.app_form_input_field("Field Three *", 1),
                         ]
                     ),
+                    Divider(height=2, color="transparent"),
                     Row(
                         alignment= MainAxisAlignment.END,
                         controls=[
-                            
+                            return_form_button()
                         ]
                     )
                 ]
