@@ -186,6 +186,22 @@ class Form(ft.Container):
 
         self.content.update()
 
+# Defnição alguns estilos, atributos e colunas da tabela de dados
+column_names = [
+    "Column One", "Column Two", "Column Three", "Column Four"
+]
+
+data_table_style = {
+    "expand": True,
+    "border_radius": 8,
+    "border": ft.broder.all(2, "#EBEBEB")
+}
+
+# Definição da classe para a tabela de dados
+class DataTable(ft.DataTable):
+    def __init__(self):
+        super().__init__()
+
 def main(page: ft.Page):
     page.bgcolor = "#F7ECE1"
 
