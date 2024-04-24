@@ -154,11 +154,14 @@ class Header(ft.Container):
             # Alterando a visibilidade em relação ao que está sendo digitado na caixa de pesquisa
             # Lidando com distinção de maiúsculas e minúsculas, definindo tudo como minúsculo
             data_rows.visible = (
-                True if e.control.value.lower() in data_cell.content.value.lower()
+                True 
+                if e.control.value.lower() in data_cell.content.value.lower()
                 else False
             )
 
-            data_rows
+            data_rows.update()
+
+        ...
 
 # Define o estilo e atributos da classe Form 
 form_style = {
